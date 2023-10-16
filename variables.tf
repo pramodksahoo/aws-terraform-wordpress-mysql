@@ -1,6 +1,12 @@
+# Define a variable for AWS Region
 variable "aws_region" {
   description = "AWS region"
   default     = "us-east-1" # Change this to your preferred region
+}
+
+# Define a list of availability zones
+variable "availability_zones" {
+  default = ["us-east-1a", "us-east-1b"]
 }
 
 variable "key_name" {
@@ -23,15 +29,4 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-# Define a list of availability zones
-variable "availability_zones" {
-  default = ["us-east-1a", "us-east-1b"]
-}
-
-# Define variables
-variable "aws_region" {
-  description = "AWS region where resources will be deployed"
-  type        = string
-  default     = "us-east-1" # Change to your desired region
-}
 # ------------------------------------------

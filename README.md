@@ -1,9 +1,10 @@
-# Terraform to create aws resource for highly available webapp and DB setup
+# Terraform to create aws resource for highly available web app and DB setup
 Creating a highly available web application across two Availability Zones (AZs) on AWS with a MySQL database and an Application Load Balancer (ALB) using Terraform involves several steps. Here's a high-level overview of the architecture:
-``````
-Note:
+``
+#### Note:
+
 This configuration provides a highly available web application using AWS resources and Terraform, distributing traffic across two Availability Zones and a MySQL RDS database in Multi-AZ mode for redundancy. Adjust the configuration according to your specific requirements and security needs.
-``````
+``
 ### Installation Requirements
 - AWS Account: You need an AWS account.
 - Terraform: Install Terraform on your local machine.
@@ -44,9 +45,12 @@ Define outputs to display important information about your infrastructure.
 
 
 -  Deployment Steps:
-##### Run `terraform init` to initialize your Terraform project.
-##### Run `terraform plan` to see the execution plan.
-##### Run `terraform apply` to create your infrastructure.
+  
+ Run `terraform init` to initialize your Terraform project.
+ 
+ Run `terraform plan` to see the execution plan.
+ 
+ Run `terraform apply` to create your infrastructure.
 
 ## Cost Optimization:
 
